@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+    .hero-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+#about, #contact {
+    padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+    #about, #contact {
+        padding: 30px 0;
+    }
+}
+
+#portfolio .card {
+    transition: transform 0.2s;
+    width: 100%; /* Ensure card takes full width on smaller screens */
+}
+
+#portfolio .card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    #portfolio .card {
+        margin-bottom: 20px; /* Add space between cards on small screens */
+    }
+}

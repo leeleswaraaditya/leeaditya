@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero bg-primary text-white text-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <img
+              src="Me.jpg"
+              alt="Your Name"
+              class="rounded-circle img-fluid hero-img"
+            />
+          </div>
+          <div class="col-md-8">
+            <h1 class="display-4">Hello, I'm G Leeleswara Aditya</h1>
+            <p class="lead">I'm a Student</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center"><em>About Me</em></h2>
+        <p class="text-center">
+          Hello! I'm Aditya, currently pursuing a degree in
+          <b>CSE-DATA SCIENCE</b> at <b>VNR VJIET, HYDERABAD</b>. With a strong
+          foundation in engineering principles and hands-on experience through
+          various projects.
+        </p>
+        <p class="text-center">
+          I have developed skills in data analysis, data engineering, MS Office,
+          SQL.
+        </p>
+        <p class="text-center">
+          I am particularly interested in Data Science, and I am eager to
+          further my knowledge in these areas. My <b>hobbies:</b> exploring
+          nature, listening to music, playing badminton
+        </p>
+        <p class="text-center">
+          I am excited to continue my growth as an engineer and contribute to
+          impactful projects that drive innovation and efficiency.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row justify-content-center">
+          <!-- Example Portfolio Item -->
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+            <div class="card">
+              <img src="Toji.jpg" class="card-img-top" alt="Project 1" />
+              <div class="card-body">
+                <h5 class="card-title">Hand Gesture Recognition</h5>
+                <p class="card-text">
+                  This Python project explores the development of a realtime
+                  hand gesture recognition system using computer vision
+                  techniques, OpenCV, and TensorFlow.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat similar blocks for more projects -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
